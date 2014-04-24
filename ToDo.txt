@@ -1,0 +1,56 @@
+//UI
+3)Pagina Edit Make : no new posibility
+4)delete : make alert
+10)angular to angular dart
+
+5)refactoring js
+6)refactoging css
+
+//Backend
+7)send nsb messages
+8)map reduce :http://stackoverflow.com/questions/4253334/ravendb-map-reduce-example-using-net-client
+
+9) ravendb v3 http://ayende.com/blog/165921/ravendb-3-0-status-update?Key=4a114e8b-fe61-4766-bcc5-8e715f5414b7
+
+10)modeling nosql http://ayende.com/blog/4466/that-no-sql-thing-modeling-documents-in-a-document-database
+
+http://ayende.com/blog/4465/that-no-sql-thing-the-relational-modeling-anti-pattern-in-document-databases
+
+11)result transofrmers http://ayende.com/blog/161346/robs-sprint-result-transformers
+
+To Do 
+
+ZeroMq,RabbitMq
+ -add queueing
+
+NServiceBus
+
+ASP.NET MVC 5 + Web API 2 + EF 6
+
+F#
+ -add f# version
+ -mark seeman arch 
+
+RavenDB
+ - store in raven all
+ - remove session.save : rob 
+
+Jquery
+
+AngularJS
+
+Mobile
+  -add mobile version
+
+Dart
+  -transform js and not only in dart
+
+Typescript
+  -transform basic js in type script
+
+NodeJs
+                    
+EventStore
+
+Ruby on Rails
+

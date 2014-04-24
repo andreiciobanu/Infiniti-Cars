@@ -1,0 +1,41 @@
+﻿<form name="locationform" role="form">
+    <h5>Edit Make</h5>
+    <div>
+        <label for="NameEditClass">Name<span style="color: Red">*</span></label>
+        <input type="text" id="NameEditClass" placeholder="Name" required data-ng-model="make.Name">
+    </div>
+    <div style="height: 20px"></div>
+    <div>
+        <label for="description">
+            Description<span style="color: Red">*</span>
+        </label>
+        <textarea id="description" placeholder="Description" required data-ng-model="make.Description" style="margin-left: 58px; width: 200px"></textarea>
+    </div>
+    <label>
+        Models
+    </label>
+    <!--<select id="options" name="model">
+            <option value="make.Id">-Select City-</option>
+        </select>-->
+    <table>
+        <thead>
+            <tr>
+                <th style="padding-right: 211px" >Name</th>
+                <th style="padding-right: 211px">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="model in make.Models">
+                <td style="padding-right: 205px">{{ model.Name }}</td>
+                <td>{{ model.Description }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="height: 20px"></div>
+    <div>
+        <button data-ng-disabled="locationform.$invalid" data-ng-click="editMake(make)">
+            Submit
+        </button>
+        <a href="#Makes">Cancel</a>
+    </div>
+</form>

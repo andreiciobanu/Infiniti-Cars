@@ -1,0 +1,49 @@
+﻿<div>
+    <div>
+        <label for="NameEditClass">Name<span style="color: Red;">*</span></label>
+        <input type="text" id="NameEditClass" placeholder="Name" required data-ng-model="user.Name">
+    </div>
+
+    <h5>All Makes Non Preffered</h5>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="make in allMakesNonPreffered">
+                <td style="padding-right: 205px">{{ make.Name }}</td>
+                <td style="padding-right: 205px">{{ make.Description }}</td>
+                <td>
+                    <a href="javascript:;" data-ng-click="addModelToPrefferedList(make)">Add</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h5>Preffered Makes </h5>
+    <table>
+        <thead>
+            <tr>
+                <th style="padding-right: 211px" >Name</th>
+                <th style="padding-right: 211px" >Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="pref in user.PrefferedManufacturers">
+                <td style="padding-right: 192px">{{ pref.Name }}</td>
+                <td style="padding-right: 192px">{{ pref.Description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="height: 20px"></div>
+    <div>
+        <button data-ng-disabled="locationform.$invalid">
+            Submit
+        </button>
+        <a href="/Home">Cancel</a>
+    </div>
+</div>

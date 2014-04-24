@@ -1,0 +1,30 @@
+﻿<div style="font-size: large; color: darkred; height: 50px;">Infiniti cars manager</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="danger" colspan="4" data-ng-show="haveContent">There are no users
+                </td>
+            </tr>
+            <tr data-ng-repeat="user in users">
+                <td>{{user.Name}}
+                </td>
+                <td style="width: 4%;">
+                    <a href="#UserEdit/{{user.Id}}"><i class="edit icon"></i></a>
+                </td>
+                <td style="width: 4%;">
+                    <a href="javascript:;" data-ng-click="deleteUser(user.Id)"><i class="trash icon"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="float: right;">
+        <a href="#UserAdd">Create new user</a>
+    </div>
+</div>
