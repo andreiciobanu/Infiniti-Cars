@@ -14,6 +14,9 @@ namespace ZeroMQ
                 {
                     server.Bind("tcp://127.0.0.1:5556");
 
+                    //Test
+
+
                     using (var client = ctx.CreateRequestSocket())
                     {
                         client.Connect("tcp://127.0.0.1:5556");
