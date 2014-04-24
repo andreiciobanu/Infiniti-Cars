@@ -6,6 +6,7 @@ open System.Linq
 open System.Web
 open System.Web.Mvc
 open System.Web.Mvc.Ajax
+open System.Web.Http
 
-type HomeController() =
+type RavenAPIController() =
     inherit ApiController()
